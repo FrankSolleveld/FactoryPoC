@@ -11,6 +11,10 @@
 		95D950582A41933B003B5911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D950572A41933B003B5911 /* ContentView.swift */; };
 		95D9505A2A41933C003B5911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D950592A41933C003B5911 /* Assets.xcassets */; };
 		95D9505D2A41933C003B5911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D9505C2A41933C003B5911 /* Preview Assets.xcassets */; };
+		95D950662A419671003B5911 /* ModuleA in Frameworks */ = {isa = PBXBuildFile; productRef = 95D950652A419671003B5911 /* ModuleA */; };
+		95D950682A41973D003B5911 /* PoCAutoRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D950672A41973D003B5911 /* PoCAutoRegister.swift */; };
+		95D9506A2A419785003B5911 /* ModuleB in Frameworks */ = {isa = PBXBuildFile; productRef = 95D950692A419785003B5911 /* ModuleB */; };
+		95D9506C2A41978A003B5911 /* ModuleP in Frameworks */ = {isa = PBXBuildFile; productRef = 95D9506B2A41978A003B5911 /* ModuleP */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,8 @@
 		95D950572A41933B003B5911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95D950592A41933C003B5911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95D9505C2A41933C003B5911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95D950632A41935A003B5911 /* FactoryPackages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FactoryPackages; sourceTree = "<group>"; };
+		95D950672A41973D003B5911 /* PoCAutoRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoCAutoRegister.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D9506C2A41978A003B5911 /* ModuleP in Frameworks */,
+				95D950662A419671003B5911 /* ModuleA in Frameworks */,
+				95D9506A2A419785003B5911 /* ModuleB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +44,10 @@
 		95D950492A41933B003B5911 = {
 			isa = PBXGroup;
 			children = (
+				95D950632A41935A003B5911 /* FactoryPackages */,
 				95D950542A41933B003B5911 /* FactoryPoC */,
 				95D950532A41933B003B5911 /* Products */,
+				95D950642A419671003B5911 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +62,7 @@
 		95D950542A41933B003B5911 /* FactoryPoC */ = {
 			isa = PBXGroup;
 			children = (
+				95D950672A41973D003B5911 /* PoCAutoRegister.swift */,
 				95D950552A41933B003B5911 /* FactoryPoCApp.swift */,
 				95D950572A41933B003B5911 /* ContentView.swift */,
 				95D950592A41933C003B5911 /* Assets.xcassets */,
@@ -65,6 +77,13 @@
 				95D9505C2A41933C003B5911 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95D950642A419671003B5911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,11 @@
 			dependencies = (
 			);
 			name = FactoryPoC;
+			packageProductDependencies = (
+				95D950652A419671003B5911 /* ModuleA */,
+				95D950692A419785003B5911 /* ModuleB */,
+				95D9506B2A41978A003B5911 /* ModuleP */,
+			);
 			productName = FactoryPoC;
 			productReference = 95D950522A41933B003B5911 /* FactoryPoC.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D950582A41933B003B5911 /* ContentView.swift in Sources */,
+				95D950682A41973D003B5911 /* PoCAutoRegister.swift in Sources */,
 				95D950562A41933B003B5911 /* FactoryPoCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +369,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95D950652A419671003B5911 /* ModuleA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ModuleA;
+		};
+		95D950692A419785003B5911 /* ModuleB */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ModuleB;
+		};
+		95D9506B2A41978A003B5911 /* ModuleP */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ModuleP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95D9504A2A41933B003B5911 /* Project object */;
 }
